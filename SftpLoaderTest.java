@@ -76,6 +76,7 @@ public class SftpLoaderTest extends AbstractProtocolTest {
 
 	/**
 	 * Test cleanup - Stop the ssh server and delete test file.
+	 *
 	 */
 	@After
 	public void deleteTempFile() {
