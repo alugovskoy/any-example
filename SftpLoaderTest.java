@@ -24,25 +24,13 @@ import java.util.Arrays;
  * @author Andrey Lugovskoy.
  */
 public class SftpLoaderTest extends AbstractProtocolTest {
-	/**
-	 * Defines the ssh server daemon.
-	 */
+
 	private SshServer sshd;
 
-	/**
-	 * Defines the random available ephermal port to use for the ssh
-	 * server.
-	 */
 	private int port;
 
-	/**
-	 * Defines the local test file to retrieve to.
-	 */
 	private File localTestFile;
 
-	/**
-	 * Set up the test.
-	 */
 	@SuppressWarnings("unchecked")
 	@Before
 	public void startSSHServer() {
@@ -74,10 +62,6 @@ public class SftpLoaderTest extends AbstractProtocolTest {
 				+ File.separator + TEST_FILE_PATH);
 	}
 
-	/**
-	 * Test cleanup - Stop the ssh server and delete test file.
-	 *
-	 */
 	@After
 	public void deleteTempFile() {
 		try {
