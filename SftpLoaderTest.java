@@ -29,8 +29,6 @@ public class SftpLoaderTest extends AbstractProtocolTest {
 
 	private int port;
 
-	private File localTestFile;
-
 	@SuppressWarnings("unchecked")
 	@Before
 	public void startSSHServer() {
@@ -57,9 +55,6 @@ public class SftpLoaderTest extends AbstractProtocolTest {
 			e.printStackTrace();
 			Assert.fail(e.getMessage());
 		}
-
-		localTestFile = new File(System.getProperty("user.dir")
-				+ File.separator + TEST_FILE_PATH);
 	}
 
 	@After
